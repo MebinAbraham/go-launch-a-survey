@@ -8,7 +8,7 @@ if [[ -z "$1" ]]; then
 fi
 
 RUNNER_URL=$1
-IMAGE_TAG="${2:-v1.1.0}"
+IMAGE_TAG="${2:-latest}"
 
 helm tiller run \
     helm upgrade --install \
