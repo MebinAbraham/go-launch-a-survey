@@ -75,11 +75,11 @@ You need to have Helm installed locally
 To deploy to a cluster you can run the following command
 
 ```
-./scripts/deploy_launcher.sh <RUNNER_URL>
+./k8s/deploy_app.sh <RUNNER_URL>
 ```
 ##### Example
  ```
-./scripts/deploy_launcher.sh https://example.com
+./k8s/deploy_app.sh https://example.com
 ```
 
 ### Notes

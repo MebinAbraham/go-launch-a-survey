@@ -13,6 +13,6 @@ IMAGE_TAG="${2:-latest}"
 helm tiller run \
     helm upgrade --install \
     survey-launcher \
-    helm/launcher \
+    k8s/helm \
     --set surveyRunnerUrl=https://${RUNNER_URL} \
     --set image.tag=${IMAGE_TAG}
